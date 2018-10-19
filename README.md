@@ -1,4 +1,6 @@
-# vue-firestore
+# Vue 3 Firebase Tutorial: Build Firestore CRUD Web Application
+
+This source code is part of [Vue 3 Firebase Tutorial: Build Firestore CRUD Web Application]() tutorial.
 
 ## Project setup
 ```
