@@ -6,8 +6,8 @@
         <b-link href="#/add-board">(Add Board)</b-link>
       </h2>
       <b-table striped hover :items="boards" :fields="fields">
-        <template slot="actions" scope="row">
-          <b-btn size="sm" @click.stop="details(row.item)">Details</b-btn>
+        <template v-slot:cell(actions)="data">
+          <b-button @click.stop="details(data.item)" variant="primary">Details</b-button>
         </template>
       </b-table>
     </b-col>
@@ -23,10 +23,10 @@ export default {
   name: 'BoardList',
   data () {
     return {
-      fields: {
-        title: { label: 'Title', sortable: true, 'class': 'text-left' },
-        actions: { label: 'Action', 'class': 'text-center' }
-      },
+      fields: [
+        { key: 'title', label: 'Title', sortable: true, 'class': 'text-left' },
+        { key: 'actions', label: 'Action', 'class': 'text-center' }
+      ],
       boards: [],
       errors: [],
       ref: firebase.firestore().collection('boards'),
