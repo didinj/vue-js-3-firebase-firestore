@@ -12,8 +12,14 @@
     "eslint": "^6.8.0",
     "eslint-plugin-vue": "^6.1.2",
     "firebase": "^7.7.0",
+    "jquery": "^3.4.1",
+    "lodash.defaultsdeep": "^4.6.1",
+    "mixin-deep": "^2.0.1",
+    "set-value": "^3.0.1",
     "vue": "^2.6.11",
-    "vue-router": "^3.1.5"
+    "vue-router": "^3.1.5",
+    "webpack-bundle-analyzer": "^3.6.0",
+    "webpack-dev-server": "^3.10.1"
   },
   "devDependencies": {
     "@vue/cli-plugin-babel": "^4.1.2",

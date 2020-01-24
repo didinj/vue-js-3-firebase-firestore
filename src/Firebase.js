@@ -1,5 +1,4 @@
-import * as firebase from 'firebase';
-import firestore from 'firebase/firestore'
+import firebase from 'firebase';
 
 const settings = {timestampsInSnapshots: true};
 
